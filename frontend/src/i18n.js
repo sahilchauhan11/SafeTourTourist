@@ -1,0 +1,162 @@
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import LanguageDetector from "i18next-browser-languagedetector";
+
+i18n
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    resources: {
+      en: {
+        home: {
+          welcome: "Welcome to Tourist Safety System",
+          description:
+            "A smart safety ecosystem that protects tourists using AI monitoring, geofencing, and blockchain identity. Stay safe, travel smarter, and explore with confidence.",
+          explore: "Explore Dashboard",
+          learnMore: "Learn More",
+          login: "Login with Blockchain",
+          trustedBy: "Trusted by 10,000+ tourists",
+          poweredBy: "Powered by xAI",
+          home: "Home",
+          dashboard: "Dashboard",
+          profile: "Profile",
+          adminPanel: "Admin Panel",
+          logout: "Logout",
+        },
+        dashboard: {
+          safetyDashboard: "Safety Dashboard",
+          permitWarning: "You need a valid permit (e.g., ILP/PAP) to access restricted areas.",
+        },
+        alerts: {
+          realtimeAlerts: "Real-time Alerts",
+          noAlerts: "No alerts at the moment",
+          viewOnMap: "View on Map",
+          restrictedZone: "Tourist entered restricted zone",
+          sosReceived: "SOS received from Location X",
+          crowdDensity: "Crowd density high near Temple Road",
+        },
+        sos: {
+          sos: "SOS",
+          loginRequired: "Please login to send SOS",
+          sosSent: "SOS sent to authorities!",
+          locationError: "Unable to access location. Please try again.",
+        },
+        map: {
+          loadingMap: "Loading Interactive Map...",
+          restrictedArea: "Restricted Area (Permit Required)",
+          safeZone: "Safe Zone",
+          yourLocation: "Your Location",
+        },
+        profile: {
+          title: "Tourist Profile",
+          verified: "Verified Digital Identity",
+          permits: "Permits",
+          noPermits: "No permits available",
+          digitalID: "Digital ID Card",
+          id: "ID",
+          noID: "No ID available",
+          downloadQR: "Download QR Code",
+          refreshID: "Refresh ID",
+          shareID: "Share ID",
+          idRefreshed: "ID refreshed successfully",
+          idShared: "ID shared successfully",
+          reportIncident: "Report an Incident",
+          incidentPlaceholder: "Describe the incident...",
+          submitReport: "Submit Report",
+          incidentReported: "Incident reported successfully",
+          error: "An error occurred. Please try again.",
+        },
+        login: {
+          title: "Login to Your Account",
+          description: "Connect your blockchain wallet to access the Tourist Safety System.",
+          connectWallet: "Connect Wallet",
+          connecting: "Connecting...",
+          noWallet: "No wallet detected. Please install MetaMask or another Web3 wallet.",
+          connectError: "Failed to connect wallet. Please try again.",
+          permitInfo: "Need permits for restricted areas?",
+          learnMore: "Learn More",
+        },
+      },
+      hi: {
+        home: {
+          welcome: "पर्यटक सुरक्षा प्रणाली में आपका स्वागत है",
+          description:
+            "एक स्मार्ट सुरक्षा पारिस्थितिकी तंत्र जो पर्यटकों को AI निगरानी, जियोफेंसिंग, और ब्लॉकचेन पहचान के साथ सुरक्षित रखता है। सुरक्षित रहें, स्मार्ट यात्रा करें, और आत्मविश्वास के साथ अन्वेषण करें।",
+          explore: "डैशबोर्ड देखें",
+          learnMore: "और जानें",
+          login: "ब्लॉकचेन के साथ लॉगिन करें",
+          trustedBy: "10,000+ पर्यटकों द्वारा विश्वसनीय",
+          poweredBy: "xAI द्वारा संचालित",
+          home: "होम",
+          dashboard: "डैशबोर्ड",
+          profile: "प्रोफाइल",
+          adminPanel: "एडमिन पैनल",
+          logout: "लॉगआउट",
+        },
+        dashboard: {
+          safetyDashboard: "सुरक्षा डैशबोर्ड",
+          permitWarning: "प्रतिबंधित क्षेत्रों तक पहुंचने के लिए आपको वैध परमिट (जैसे, ILP/PAP) की आवश्यकता है।",
+        },
+        alerts: {
+          realtimeAlerts: "वास्तविक समय अलर्ट",
+          noAlerts: "फिलहाल कोई अलर्ट नहीं",
+          viewOnMap: "नक्शे पर देखें",
+          restrictedZone: "पर्यटक प्रतिबंधित क्षेत्र में प्रवेश किया",
+          sosReceived: "स्थान X से SOS प्राप्त हुआ",
+          crowdDensity: "मंदिर रोड के पास भीड़ घनत्व अधिक",
+        },
+        sos: {
+          sos: "एसओएस",
+          loginRequired: "एसओएस भेजने के लिए कृपया लॉगिन करें",
+          sosSent: "एसओएस अधिकारियों को भेजा गया!",
+          locationError: "स्थान तक पहुंचने में असमर्थ। कृपया फिर से प्रयास करें।",
+        },
+        map: {
+          loadingMap: "इंटरैक्टिव नक्शा लोड हो रहा है...",
+          restrictedArea: "प्रतिबंधित क्षेत्र (परमिट आवश्यक)",
+          safeZone: "सुरक्षित क्षेत्र",
+          yourLocation: "आपका स्थान",
+        },
+        profile: {
+          title: "पर्यटक प्रोफाइल",
+          verified: "सत्यापित डिजिटल पहचान",
+          permits: "परमिट",
+          noPermits: "कोई परमिट उपलब्ध नहीं",
+          digitalID: "डिजिटल आईडी कार्ड",
+          id: "आईडी",
+          noID: "कोई आईडी उपलब्ध नहीं",
+          downloadQR: "क्यूआर कोड डाउनलोड करें",
+          refreshID: "आईडी रिफ्रेश करें",
+          shareID: "आईडी साझा करें",
+          idRefreshed: "आईडी सफलतापूर्वक रिफ्रेश की गई",
+          idShared: "आईडी सफलतापूर्वक साझा की गई",
+          reportIncident: "घटना की रिपोर्ट करें",
+          incidentPlaceholder: "घटना का वर्णन करें...",
+          submitReport: "रिपोर्ट सबमिट करें",
+          incidentReported: "घटना सफलतापूर्वक रिपोर्ट की गई",
+          error: "एक त्रुटि हुई। कृपया फिर से प्रयास करें।",
+        },
+        login: {
+          title: "अपने खाते में लॉगिन करें",
+          description: "पर्यटक सुरक्षा प्रणाली तक पहुंचने के लिए अपने ब्लॉकचेन वॉलेट को कनेक्ट करें।",
+          connectWallet: "वॉलेट कनेक्ट करें",
+          connecting: "कनेक्ट हो रहा है...",
+          noWallet: "कोई वॉलेट नहीं मिला। कृपया MetaMask या अन्य Web3 वॉलेट स्थापित करें।",
+          connectError: "वॉलेट कनेक्ट करने में विफल। कृपया फिर से प्रयास करें।",
+          permitInfo: "प्रतिबंधित क्षेत्रों के लिए परमिट चाहिए?",
+          learnMore: "और जानें",
+        },
+      },
+    },
+    ns: ["home", "dashboard", "alerts", "sos", "map", "profile", "login"],
+    defaultNS: "home",
+    lng: "en",
+    fallbackLng: "en",
+    interpolation: { escapeValue: false },
+    detection: {
+      order: ["navigator", "localStorage", "cookie"],
+      caches: ["localStorage", "cookie"],
+    },
+  });
+
+export default i18n;
